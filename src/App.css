@@ -101,7 +101,7 @@ body {
 }
 
 .rightSideDiv {
-  background-color: #f1f6ff;
+  background-color: #fff;
   border-radius: 14px;
   box-shadow: 0px 0px 23.769px 0px rgba(0, 0, 0, 0.05);
 }
@@ -4535,25 +4535,27 @@ input:-webkit-autofill:active {
   cursor: pointer;
 }
 
-.activeTypedblue {
+.activeTypedgreen {
+  color: #01C8BC;
   transition: 0.3s ease;
   overflow: hidden;
   padding: 0 5px;
   font-weight: 500;
   font-size: 56px;
-  background-color: rgba(0, 85, 255, 0.08);
+  background-color: rgba(1, 200, 188, 0.05);
   line-height: 0;
 }
 
 
 
-.activeTypedgreen {
+.activeTypedpurple {
+  color: #8896FF;
   transition: 0.3s ease;
   overflow: hidden;
   padding: 0 5px;
   font-weight: 500;
   font-size: 56px;
-  background-color: rgba(0, 217, 205, 0.08);
+  background-color: rgba(136, 150, 255, 0.08);
   line-height: 0;
 }
 
@@ -4594,7 +4596,7 @@ input:-webkit-autofill:active {
 .Typewriter__wrapper {
   font-size: 55px;
   text-wrap: nowrap;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .Typewriter__cursor {
