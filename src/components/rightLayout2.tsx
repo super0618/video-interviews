@@ -55,20 +55,20 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
       <Typewriter
 						options={{
 							strings: [
-								'"Tell me about <br/> yourself in <br/> <span class="activeTypedblue">30 seconds"</span>',
-								'"Tell me why <br/> you’re <span class="activeTypedgreen">perfect</span><br/> for this role"',
-								'"Tell me about <br/> your relevant <br/><span class="activeTypedblue">experience"</span>',
-								'"Where do you <br/> see yourself in <br/> <span class="activeTypedgreen"> 5 years"</span>',
-								'"What are you <br/> <span class="activeTypedblue">passionate </span><br/> about?"',
-								'"How do you <br/> stay <span class="activeTypedgreen">organised</span><br/> at work?"',
-								'"Tell me about <br/> a time you face <br/> <span class="activeTypedblue">adversity"</span>',
-								'"What makes you <br/> <span class="activeTypedgreen">unique"</span>',
-								'"Tell me what <br/> you most enjoy about <span class="activeTypedblue"><br/>work"</span>',
-								'"Tell me what <br/> makes you a great <br/><span class="activeTypedgreen">candidate"</span>',
-								'"Tell me what <br/> you’d like to <span class="activeTypedblue">ask</span><br/> about the position"',
+								'“Tell me about<br/>&nbsp;&nbsp;yourself in<br/>&nbsp;&nbsp;<span class="activeTypedgreen">30 seconds</span>”',
+                '“Tell me why<br/>&nbsp;&nbsp;you’re <span class="activeTypedpurple">perfect</span><br/>&nbsp;&nbsp;for this role”',
+                '“Tell me about<br/>&nbsp;&nbsp;your relevant<br/>&nbsp;&nbsp;<span class="activeTypedgreen">experience</span>”',
+                '“Where do you<br/>&nbsp;&nbsp;see yourself in<br/>&nbsp;&nbsp;<span class="activeTypedpurple">five years?</span>”',
+                '“Tell me about a<br/>&nbsp;&nbsp;time you faced<br/>&nbsp;&nbsp;<span class="activeTypedgreen">adversity?</span>”',
+                '“What are your<br/>&nbsp;&nbsp;<span class="activeTypedpurple">pet peeves?</span>”',
+                '“What <span class="activeTypedgreen">motivates</span><br/>&nbsp;&nbsp;you at work?”',
+                '“Where are you<br/>&nbsp;&nbsp;<span class="activeTypedpurple">passionate</span><br/>&nbsp;&nbsp;about?”',
+                '“How do you<br/>&nbsp;&nbsp;stay <span class="activeTypedgreen">organised</span><br/>&nbsp;&nbsp;at work?”',
 							],
 							autoStart: true,
 							loop: true,
+              deleteSpeed: 5,
+              delay: 50
 						}}
 					/>
       </div>
