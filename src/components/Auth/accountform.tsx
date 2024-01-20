@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Checkbox } from 'pretty-checkbox-react';
+import '@djthoms/pretty-checkbox';
 import Icons from "../../components/icons";
 import { useMediaQuery } from 'react-responsive'
 import { errorByKey } from "../../helper";
@@ -97,8 +99,8 @@ const SignInForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
             </div>
             <div className="jdaskfjnas-ajaied">
               <div className="sandka-jwe">
-                <Icons iconNumber={isTabletOrMobile ? 57 : isAgree ? 11 : 74} />
                 <h5 className={`${isTabletOrMobile ? "jjlkajsd-awje" : ""}`}> 
+                <Checkbox shape="curve" color="primary-o" bigger variant="thick" />
                 <span  > 
               I agree to the </span>
                 <a href="javascript:void(0);" onClick={() => handlePrivacyTermsModalShow()}>terms & conditions</a> </h5>
