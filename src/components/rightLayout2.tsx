@@ -22,6 +22,8 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
   }, [showScreen]);
 
   return <div className="rightSideDiv kjdsfkn-ajdnkw" style={style}>
+    <div className='rightSideShine'></div>
+    <div className='rightSideBG'></div>
     <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end`}>
       <SettingMenuIcon setMainScreen={setMainScreen} />
     </div>
@@ -51,7 +53,6 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
       </div>
     ) : null}
     <div className="nakds-ajews">
-      <div className="topSectionDiv d-flex">
       <Typewriter
 						options={{
 							strings: [
@@ -71,16 +72,14 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
               delay: 50
 						}}
 					/>
-      </div>
       <div className="createVideoInterviewBtnDiv ">
         <button className="btn no-shadow asjdsajde" onClick={() => {
           setMainScreen(0);
-          setShowScreen(0);
+          if(setShowScreen) {
+            setShowScreen(0);
+          }
         }}>Create Video Interview</button>
       </div>
-    </div>
-    <div className='kjladsm-sajdw'>
-      <Icons iconNumber={60} />
     </div>
   </div>
 }
