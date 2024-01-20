@@ -41,14 +41,16 @@ body {
   gap: 6px;
 }
 
-.rightSideDiv {
-  width: 45.79%;
-  height: 100%;
-  position: relative;
-  box-shadow: 0px 0px 23.769px 0px rgba(0, 0, 0, 0.05);
+.rightSideBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('./rightbg.svg');
   background-position: bottom right;
   background-repeat: no-repeat;
+  opacity: 0.7;
 }
 
 .leftSideDiv {
@@ -101,19 +103,24 @@ body {
 }
 
 .rightSideDiv {
-  background-color: #fff;
+  width: 45.79%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0px 0px 23.769px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 14px;
   box-shadow: 0px 0px 23.769px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
-.topSectionDiv h1 {
-  color: #0f0222;
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 64px;
-  letter-spacing: 1.375px;
-  max-width: 368px;
+.rightSideShine {
+  position: absolute;
+  width: max(300%, 1800px);
+  aspect-ratio: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50px;
 }
 
 .nakds-ajews {
@@ -4560,8 +4567,8 @@ input:-webkit-autofill:active {
 }
 
 .profile-img-btn {
-  margin-top: 4px;
-  margin-right: 0px;
+  margin-top: 6px;
+  margin-right: -1px;
 }
 
 .postion_relative {
