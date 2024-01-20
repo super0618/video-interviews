@@ -125,7 +125,7 @@ const SettingMenuIcon = ({ setMainScreen }: { setMainScreen: any }) => {
           </div>
         </div></div>)}
       {/* } rootClose> */}
-        <button  onMouseOver={handleOverlayShow} className="profile-img-btn btn btn-show no-shadow border-0 outline-0">
+        <button  onClick={handleOverlayShow} className="profile-img-btn btn btn-show no-shadow border-0 outline-0">
           {/* <Icons iconNumber={1} /> */}
           <img
             className="profile-img p-0 rounded-circle border border-2 border-white"
