@@ -22,8 +22,7 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
   }, [showScreen]);
 
   return <div className="rightSideDiv kjdsfkn-ajdnkw" style={style}>
-    <div className='rightSideShine'></div>
-    <div className='rightSideBG'></div>
+    <div className='rightSideBGImg'></div>
     <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end`}>
       <SettingMenuIcon setMainScreen={setMainScreen} />
     </div>
@@ -68,7 +67,7 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
 							],
 							autoStart: true,
 							loop: true,
-              deleteSpeed: 5,
+              deleteSpeed: 3,
               delay: 50
 						}}
 					/>
