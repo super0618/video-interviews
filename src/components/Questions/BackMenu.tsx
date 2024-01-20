@@ -56,13 +56,6 @@ const BackMenu = ({
         ) : (
           <></>
         )} */}
-        <div className="sortButtonDiv" onClick={() => { }}>
-          <h5 className="mksaldkamaw-jdwa">Filter</h5>
-          <h5 className="mksaldkamaw-jdwa sortButtonIcon">
-            <Icons iconNumber={91} />
-          </h5>
-        </div>
-
         {
           isTabletOrMobile && showScreen == 6 ?
             <button
