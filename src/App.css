@@ -503,8 +503,11 @@ body {
   color: #5468ff !important;
 }
 
-.kdjsa-ajwnkelds .jksd-kosaeknae input,
 .kdjsa-ajwnkelds .jksd-kosaeknae input::placeholder {
+  color: rgba(52, 67, 86, 0.5) !important;
+}
+
+.kdjsa-ajwnkelds .jksd-kosaeknae input {
   color: rgba(52, 67, 86, 0.8) !important;
 }
 
@@ -552,6 +555,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  transition: 0.2s;
 }
 
 .jdaskfjnas-ajaied h5 {
@@ -562,6 +566,10 @@ body {
   line-height: 28px;
   margin-left: 6px;
   font-family: 'HK Grotesk';
+}
+
+.jdaskfjnas-ajaied button:hover {
+  color: #6677f3 !important;
 }
 
 .jdaskfjnas-ajaied {
