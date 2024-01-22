@@ -158,16 +158,16 @@ body {
 
 .createVideoInterviewBtnDiv button {
   background-color: #194eff !important;
-  width: 224px;
-  height: 55px;
+  width: 200px;
+  height: 51px;
 
   color: #fff !important;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 155.687%;
   letter-spacing: 0.4px;
-  margin-top: 37px;
+  margin-top: 20px;
   margin-left: 30px;
   border-radius: 0px;
 }
@@ -4552,7 +4552,6 @@ input:-webkit-autofill:active {
   color: #01C8BC;
   transition: 0.3s ease;
   overflow: hidden;
-  padding: 0 5px;
   font-weight: 500;
   font-size: 56px;
   background-color: rgba(1, 200, 188, 0.05);
@@ -4565,7 +4564,6 @@ input:-webkit-autofill:active {
   color: #8896FF;
   transition: 0.3s ease;
   overflow: hidden;
-  padding: 0 5px;
   font-weight: 500;
   font-size: 56px;
   background-color: rgba(136, 150, 255, 0.08);
@@ -4608,12 +4606,23 @@ input:-webkit-autofill:active {
 .questionText{width: 208px;}
 
 .Typewriter {
-  height: 180px;
+  height: 194px;
+}
+
+.Typewriter__wrapper {
+  position: relative;
 }
 
 .Typewriter__wrapper, .Typewriter__cursor {
-  line-height: 60px;
+  line-height: 64px;
   font-size: 55px;
   text-wrap: nowrap;
   font-weight: 500;
+}
+
+.Typewriter__wrapper::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: -21px;
 }
