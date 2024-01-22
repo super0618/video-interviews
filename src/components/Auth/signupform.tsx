@@ -16,12 +16,21 @@ const SignUpForm = ({ setshowScreen, className = '', signUpFormData, handleFormC
   useEffect(() => {
     if (errorByKey(signUpFormErrors, 'birth_date')) {
       setHasError('birth_date');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'birth_date'));
     } else if (errorByKey(signUpFormErrors, 'location')) {
       setHasError('location');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'location'));
     } else if (errorByKey(signUpFormErrors, 'company_name')) {
       setHasError('company_name');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'company_name'));
     } else {
       setHasError('');
@@ -41,15 +50,27 @@ const SignUpForm = ({ setshowScreen, className = '', signUpFormData, handleFormC
     if (typeof setErrorMessage === 'function') {
       if (!signUpFormData?.birth_date?.length) {
         setHasError('birth_date');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter a Date of Birth');
       } else if (!signUpFormData?.location?.length) {
         setHasError('location');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter a Location');
       } else if (!signUpFormData?.company_name?.length) {
         setHasError('company_name');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter a Company');
       } else if (signUpFormData?.company_name?.length < 3) {
         setHasError('company_name');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('Company must have a minimum of 3 letters');
       } else {
         submit();

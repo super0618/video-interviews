@@ -24,9 +24,15 @@ const EmailLoginForm = ({ setshowScreen, className = '', setMainScreen, setError
   useEffect(() => {
     if (errorByKey(errors, 'password')) {
       setHasError('password');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(errors, 'password'));
     } else if (errorByKey(errors, 'confirm_password')) {
       setHasError('confirm_password');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(errors, 'confirm_password'));
     } else {
       setHasError('');
@@ -38,9 +44,15 @@ const EmailLoginForm = ({ setshowScreen, className = '', setMainScreen, setError
     if (typeof setErrorMessage === 'function') {
       if (!siginInForm?.email?.length) {
         setHasError('email');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter a Email');
       } else if (!siginInForm?.password?.length) {
         setHasError('password');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter a Password');
       } else {
         submit();

@@ -25,9 +25,15 @@ const SignInForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
   useEffect(() => {
     if (errorByKey(signUpFormErrors, 'name')) {
       setHasError('name');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'name'));
     } else if (errorByKey(signUpFormErrors, 'email')) {
       setHasError('email');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'email'));
     } else {
       setHasError('');
@@ -39,15 +45,27 @@ const SignInForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
     if (typeof setErrorMessage === 'function') {
       if (!signUpFormData?.name?.length) {
         setHasError('name');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter your Full Name!');
       } else if (!signUpFormData?.email?.length) {
         setHasError('email');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must enter your Email!');
       } else if (signUpFormData?.email?.length && !validateEmail(signUpFormData?.email)) {
         setHasError('email');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('Invalid email address!');
       } else if (!isAgree) {
         setHasError('terms');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('You must agree to the Terms & Conditions');
       } else {
         setHasError('');
