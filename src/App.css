@@ -91,11 +91,14 @@ body {
 }
 
 .rightSideDiv {
+  border-radius: 33px;
+  top: 0;
+  height: calc(100% - 50px) !important;
+  margin-right: 25px;
   width: 45.79%;
   height: 100%;
   position: relative;
   background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 14px;
   box-shadow: 0px 0px 23.769px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -1067,7 +1070,7 @@ body {
 .leftSideHeader {
   display: flex;
   justify-content: flex-end;
-  padding: 8px 9px 0px 8px;
+  padding: 18px 40px 0px 20px;
   cursor: pointer;
   gap: 6px;
   /* position: relative;
@@ -1173,7 +1176,7 @@ body {
 
 .kjlma0o-dwa {
   border-radius: 18px 19px 18px 18px;
-  background: rgba(84, 104, 255, 0.80);
+  background: rgba(84, 104, 255, 0.40);
   /* backdrop-filter: blur(20px); */
   border: none;
   outline: none;
@@ -3519,7 +3522,7 @@ body .kdjflkas-sad {
   margin-left: 21px !important;
   margin-right: 20px !important;
   border-radius: 5px;
-  padding: 12px !important;
+  padding: 50px 12px 12px !important;
 }
 
 .message h6 {
@@ -3664,7 +3667,6 @@ body .kdjflkas-sad {
 .message-content {
   max-height: calc(100vh - 130px);
   overflow: scroll;
-  border-radius: 18px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 9.825581550598145px 24.563953399658203px 0px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(12.281976699829102px);

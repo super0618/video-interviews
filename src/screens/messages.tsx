@@ -185,9 +185,8 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
 
   return (
     <LinearBackground style={{ width: '100%' }}>
-    <div className="pageContainer" style={{ padding: 25 }}>
+    <div className="pageContainer" style={{ padding: 0, gap: 0 }}>
       <div className="leftSideDiv">
-        <div style={{ position: 'absolute', top: 0, width: '100%' }}>
           <div className="message message-content row m-0" style={{ height: 620 }}>
             <div className="col-5 message-left bg-body-tertiary h-100 overflow-auto">
               <div className="header d-flex justify-content-between align-items-center">
@@ -274,7 +273,6 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
           <div className="d-flex justify-content-center kdnklms-awendwd-11">
             <BottomMenu setShowScreen={0} showScreen={0} mainScreen={mainScreen} setMainScreen={setMainScreen} />
           </div>
-        </div>
       </div>
       <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setShowScreen} />
     </div>

@@ -61,7 +61,7 @@ function View({ mainScreen, setMainScreen, setChatUser, jobViewContext, watchAns
 
   return (
     <LinearBackground style={{ width: '100%' }}>
-      <div className="pageContainer kladsfhjn-ajwe" style={{ padding: 25 }}>
+      <div className="pageContainer kladsfhjn-ajwe" style={{ padding: 0, gap: 0 }}>
         <div className={showScreen == 1 ? "jkadshfkjf leftSideDiv rightSideBg pos-rel sjfdak-ajwe over-hdn bg-transparent" : "jkadshfkjf leftSideDiv rightSideBg1 pos-rel sjfdak-ajwe bg-transparent"}>
           <div className="leftSideHeader kjsf-ajmwe" style={{ position: 'absolute', top: 0, width: '100%' }}>
             {showScreen == 1 ? (
@@ -109,7 +109,7 @@ function View({ mainScreen, setMainScreen, setChatUser, jobViewContext, watchAns
           
           </div>
         </div>
-        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setshowScreen} style={{ borderRadius: 33 }} />
+        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setshowScreen} />
       </div>
     </LinearBackground>
   );

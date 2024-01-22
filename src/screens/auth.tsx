@@ -189,7 +189,7 @@ function Auth({ mainScreen, setMainScreen }: { mainScreen: number, setMainScreen
 
   return (
     <LinearBackground style={{ width: '100%' }}>
-      <div className="pageContainer" style={{ padding: 25 }}>
+      <div className="pageContainer" style={{ padding: 0, gap: 0 }}>
 
         <div className="leftSideDiv rightSideBg pos-rel over-hdn auth-page bg-transparent">
           <div className="leftSideHeader kjsf-ajmwe">
@@ -206,7 +206,7 @@ function Auth({ mainScreen, setMainScreen }: { mainScreen: number, setMainScreen
             ) : null}
           </div>
         </div>
-        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setshowScreen} showScreen={showScreen} mainScreen={mainScreen} style={{ borderRadius: 33 }} />
+        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setshowScreen} showScreen={showScreen} mainScreen={mainScreen} />
       </div>
     </LinearBackground>
   );
