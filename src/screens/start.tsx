@@ -76,27 +76,19 @@ function Next({ jobViewContext, setMainScreen, fromShareScreen, setJobViewContex
         document.querySelector(`.flip-child-${parseInt(previousScreen)}`)?.classList.remove('hover-anim-180');
         document.querySelector(`.flip-child-${screen}`)?.classList.add('notransition');
         document.querySelector(`.flip-child-${screen}`)?.classList.add('t-180');
-        setTimeout(() => {
-          document.querySelector(`.flip-element`)?.classList.remove('notransition');
-          document.querySelector(`.flip-child-${parseInt(previousScreen)}`)?.classList.remove('notransition');
-          document.querySelector(`.flip-child-${screen}`)?.classList.remove('notransition');
-          setTimeout(() => {
-            document.querySelector(`.flip-element`)?.classList.add('flipped');
-            document.querySelector(`.flip-child-${screen}`)?.classList.remove('d-none');
-            setTimeout(() => {
-              document.querySelector(`.flip-child-${parseInt(previousScreen)}`)?.classList.add('d-none');
-              setTimeout(() => {
-                if (document.querySelector(`.flip-child-${screen}`)?.classList.contains('t-180')) {
-                  document.querySelector(`.flip-child-${screen}`)?.classList.add('hover-anim');
-                } else {
-                  document.querySelector(`.flip-child-${screen}`)?.classList.add('hover-anim');
-                }
-                document.querySelector(`.flip-element`)?.classList.add('notransition');
-                document.querySelector(`.flip-element`)?.classList.remove('flipped');
-              }, 1000);
-            }, 500);
-          }, 100);
-        }, 100);
+        document.querySelector(`.flip-element`)?.classList.remove('notransition');
+        document.querySelector(`.flip-child-${parseInt(previousScreen)}`)?.classList.remove('notransition');
+        document.querySelector(`.flip-child-${screen}`)?.classList.remove('notransition');
+        document.querySelector(`.flip-element`)?.classList.add('flipped');
+        document.querySelector(`.flip-child-${screen}`)?.classList.remove('d-none');
+        document.querySelector(`.flip-child-${parseInt(previousScreen)}`)?.classList.add('d-none');
+        if (document.querySelector(`.flip-child-${screen}`)?.classList.contains('t-180')) {
+          document.querySelector(`.flip-child-${screen}`)?.classList.add('hover-anim');
+        } else {
+          document.querySelector(`.flip-child-${screen}`)?.classList.add('hover-anim');
+        }
+        document.querySelector(`.flip-element`)?.classList.add('notransition');
+        document.querySelector(`.flip-element`)?.classList.remove('flipped');
       }
     }
   }, [screen]);
