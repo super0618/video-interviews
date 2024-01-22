@@ -15,9 +15,15 @@ const NewPwdForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
   useEffect(() => {
     if (errorByKey(signUpFormErrors, 'password')) {
       setHasError('password');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'password'));
     } else if (errorByKey(signUpFormErrors, 'confirm_password')) {
       setHasError('confirm_password');
+      setTimeout(() => {
+        setHasError('');
+      }, 2000);
       setErrorMessage(errorByKey(signUpFormErrors, 'confirm_password'));
     } else {
       setHasError('');
@@ -29,12 +35,21 @@ const NewPwdForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
     if (typeof setErrorMessage === 'function') {
       if (!signUpFormData?.password?.length) {
         setHasError('password');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('Password must not be empty');
       } else if (signUpFormData?.password?.length < 8) {
         setHasError('password');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('Password must be at least 8 characters');
       } else if (signUpFormData?.password !== signUpFormData?.confirm_password) {
         setHasError('confirm_password');
+        setTimeout(() => {
+          setHasError('');
+        }, 2000);
         setErrorMessage('Passwords do not match');
       } else {
         setHasError('');
