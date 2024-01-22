@@ -14,7 +14,7 @@ const RightButtons = ({ setMainScreen }: { setMainScreen?: any }) => {
     <button className='no-shadow circleButtons' onClick={() => {
       setMainScreen(0)
     }}>
-      <Icons iconNumber={isTab ? 70 : 68} />
+      <Icons iconNumber={119} />
       Favourite
     </button>
     <button className='no-shadow circleButtons' onClick={() => {

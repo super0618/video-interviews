@@ -140,9 +140,8 @@ const CreateForm = ({
     // <Fade direction="left" big>
     <div className="kjkndask-ankdnwd" style={{ position: 'fixed', borderRadius: 0, left: 0, top: 0 }}>
       <div
-        className={`leftSideHeader kjsfdkl-adsj ${showScreen >= 3 ? "w-50" : ""
-          }`}
-        style={{ padding: 15 }}
+        className={`leftSideHeader kjsfdkl-adsj ${showScreen >= 3 ? "w-50" : ""}`}
+        style={{ padding: '18px 0 18px 20px' }}
       >
         <div
           onClick={() => {

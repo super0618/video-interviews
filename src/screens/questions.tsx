@@ -47,7 +47,7 @@ function View({ mainScreen, setMainScreen, setJobViewContext, setChatUser, jobVi
 
   return (
     <LinearBackground style={{ width: '100%' }}>
-      <div className="pageContainer" style={{ padding: 0 }}>
+      <div className="pageContainer" style={{ padding: 0, gap: 0 }}>
         <div className="leftSideDiv" style={fullscreen ? { width: '100%' } : {}}>
           {
             showScreen <= 5 ?

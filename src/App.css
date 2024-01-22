@@ -54,6 +54,7 @@ body {
   max-width: 100%;
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.05);
+  width: calc(100% - 25px) !important;
 }
 
 .clearfix-gte-ie6:before,
@@ -157,22 +158,6 @@ body {
 }
 .checkboxGreen {
   margin: 10px 0px;
-}
-
-.createVideoInterviewBtnDiv button {
-  background-color: #194eff !important;
-  width: 200px;
-  height: 51px;
-
-  color: #fff !important;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 155.687%;
-  letter-spacing: 0.4px;
-  margin-top: 20px;
-  margin-left: 30px;
-  border-radius: 0px;
 }
 
 .nakds-ajews {
@@ -1438,11 +1423,11 @@ body {
   background-color: rgba(0, 0, 0, 0.70);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  z-index: 999;
 }
 
 .kjsfdkl-adsj {
   position: absolute;
+  justify-content: space-between;
 }
 
 .hkasjfdlmf-dsfsd {
@@ -2555,6 +2540,19 @@ body .no-background {
 
 .circleButtons svg {
   fill-opacity: inherit;
+}
+
+.asjdsajde {
+  background-color: #194eff !important;
+  width: 200px;
+  height: 51px;
+  color: #fff !important;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 155.687%;
+  letter-spacing: 0.4px;
+  border-radius: 0px !important;
 }
 
 .asjdsajde:hover {
@@ -4609,7 +4607,7 @@ input:-webkit-autofill:active {
 .questionText{width: 208px;}
 
 .Typewriter {
-  height: 194px;
+  height: 214px;
 }
 
 .Typewriter__wrapper {
