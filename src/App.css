@@ -1066,7 +1066,7 @@ body {
 
 .leftSideHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 8px 9px 0px 8px;
   cursor: pointer;
   gap: 6px;

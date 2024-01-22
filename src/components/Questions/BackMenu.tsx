@@ -20,31 +20,6 @@ const BackMenu = ({
 
   return (
     <div className={`leftSideHeader ${showScreen == 5 && isMobile ? "jdafk-aewkmw" : ""}`} style={{ position: 'absolute', top: 0, width: '100%' }}>
-      <div
-        onClick={() => {
-          if (showScreen == 1) {
-            setShowScreen(0);
-          } else if (showScreen == 2) {
-            setShowScreen(1);
-          } else if (showScreen == 3) {
-            setShowScreen(2);
-          } else if (showScreen == 4) {
-            setShowScreen(3);
-          } else if (showScreen == 5) {
-            setShowScreen(4);
-          } else if (showScreen == 6) {
-            setShowScreen(5);
-          } else if (showScreen == 7) {
-            setShowScreen(0);
-          }
-        }}
-        className="backButtonDiv backdrop-filter"
-      >
-        <button className="hkjndankad-dnsd">
-          <Icons iconNumber={29} />
-        </button>
-        <h5 className="mksaldkamaw-jdwa">Back</h5>
-      </div>
       <div className="d-flex justify-content-between">
         {/* {true ? (
           <button className="njkljmdasp-dawm" onClick={() => {
