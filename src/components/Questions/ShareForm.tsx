@@ -45,7 +45,7 @@ const ShareForm = ({
         <div className="jkljfkld-jdskfe">
           <div className="kjjfds-janwkea hover-anim sharebox-kdj-w">
             {/* <video className="bg-video" src={"/assets/blue_bg.mp4"} autoPlay loop muted></video> */}
-            <video className="bg-video" src={"/assets/blue_bg.mp4"} autoPlay loop muted style={{ height: 'auto', width:'338px !important' }}></video>
+            <video className="bg-video" src={"/assets/blue_bg.mp4"} autoPlay loop muted style={{ height: '100%', width:'338px !important' }}></video>
             <div className='wave-box'>
               <div className='wave'></div>
             </div>
