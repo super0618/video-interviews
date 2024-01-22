@@ -115,9 +115,11 @@ const SignInForm = ({ setshowScreen, className = '', handleFormChange, signUpFor
             </div>
             <div className="jdaskfjnas-ajaied">
               <div className="sandka-jwe">
-                <Icons iconNumber={isTabletOrMobile ? 57 : isAgree ? 11 : 74} />
+                <span onClick={() => setisAgree(!isAgree)}>
+                  <Icons iconNumber={isTabletOrMobile ? 57 : isAgree ? 11 : 74} />
+                </span>
                 <h5 className={`${isTabletOrMobile ? "jjlkajsd-awje" : ""}`}> 
-                <span  > 
+                <span onClick={() => setisAgree(!isAgree)} > 
               I agree to the </span>
                 <a href="javascript:void(0);" onClick={() => handlePrivacyTermsModalShow()}>terms & conditions</a> </h5>
               </div>
