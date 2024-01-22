@@ -187,7 +187,7 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
     <LinearBackground style={{ width: '100%' }}>
     <div className="pageContainer" style={{ padding: 0, gap: 0 }}>
       <div className="leftSideDiv">
-          <div className="message message-content row m-0" style={{ height: 620 }}>
+          <div className="message message-content row" style={{ height: 620 }}>
             <div className="col-5 message-left bg-body-tertiary h-100 overflow-auto">
               <div className="header d-flex justify-content-between align-items-center">
                 <div className="message-heading">
