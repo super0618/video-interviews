@@ -48,7 +48,7 @@ const TinyModal = ({ show, handleClose, type, setMainScreen, jobView, setshowScr
           onConfirm: () => {
             handleClose();
             logout();
-            setMainScreen(5);
+            setMainScreen(7);
           },
           classes: ''
         }
