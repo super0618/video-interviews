@@ -47,7 +47,7 @@ function View({ mainScreen, setMainScreen, setJobViewContext, setChatUser, jobVi
 
   return (
     <LinearBackground style={{ width: '100%' }}>
-      <div className="pageContainer" style={{ padding: 25 }}>
+      <div className="pageContainer" style={{ padding: 0 }}>
         <div className="leftSideDiv" style={fullscreen ? { width: '100%' } : {}}>
           {
             showScreen <= 5 ?
@@ -112,7 +112,7 @@ function View({ mainScreen, setMainScreen, setJobViewContext, setChatUser, jobVi
             <BottomMenu setShowScreen={setShowScreen} showScreen={showScreen} mainScreen={mainScreen} setMainScreen={setMainScreen} />
           </div>
         </div>
-        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setShowScreen} style={fullscreen ? { display: 'none', borderRadius: 33 } : { borderRadius: 33 }} />
+        <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setShowScreen} style={fullscreen ? { display: 'none' } : {}} />
       </div>
     </LinearBackground>
   );

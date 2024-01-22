@@ -167,7 +167,7 @@ const DemoScreen = ({ setMainScreen, mainScreen = '' }: { setMainScreen: any, ma
           </div>
         </div>
 
-        <RightLayout mainScreen={mainScreen} setMainScreen={setMainScreen} setShowScreen={''} style={{ borderRadius: 33, top: 0, height: 'calc(100% - 50px)', marginRight: 25 }} />
+        <RightLayout mainScreen={mainScreen} setMainScreen={setMainScreen} setShowScreen={''} />
 
       </div>
     </LinearBackground>
