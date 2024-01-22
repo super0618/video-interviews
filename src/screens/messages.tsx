@@ -188,22 +188,6 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
       <div className="leftSideDiv">
         <LinearBackground />
         <div style={{ position: 'absolute', top: 0, width: '100%' }}>
-          <div className="leftSideHeader" style={{ justifyContent: 'flex-start', marginBottom: 10 }}>
-            <div
-              onClick={() => {
-                setMainScreen(1);
-                setShowScreen(0);
-              }}
-              className="skdmsa-dsad w-auto"
-            >
-              <div className="backButtonDiv">
-                <button className="hkjndankad-dnsd">
-                  <Icons iconNumber={29} />
-                </button>
-                <h5 className="mksaldkamaw-jdwa">Back</h5>
-              </div>
-            </div>
-          </div>
           <div className="message message-content row m-0" style={{ height: 620 }}>
             <div className="col-5 message-left bg-body-tertiary h-100 overflow-auto">
               <div className="header d-flex justify-content-between align-items-center">

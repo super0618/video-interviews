@@ -5,8 +5,6 @@ import Back from "./Back";
 const TopSec = ({ setMainScreen, showScreen, setshowScreen, showFilter, handleFilterShow, handleFilterClose, selectedFilter, setSelectedFilter }: { setMainScreen: any, showScreen: number, setshowScreen: any, showFilter: boolean, handleFilterShow: any, handleFilterClose: any, selectedFilter: any, setSelectedFilter: any }) => {
   return <>
     <div className="leftSideHeader" style={{ position: 'absolute', top: 0, width: '100%' }}>
-      <Back setMainScreen={setMainScreen} setShowScreen={setshowScreen} handleFilterClose={handleFilterClose} />
-
       <div className="d-flex justify-content-between">
         <div className="sortButtonDiv" onClick={handleFilterShow}>
           <h5 className="mksaldkamaw-jdwa">Filter</h5>
