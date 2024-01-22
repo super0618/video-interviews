@@ -7,7 +7,7 @@ const RightLayout = ({ screen, style = {} }: { screen: number, style?: any }) =>
   const { isLoggedIn } = useAuth();
   
   return <div className="rightSideDiv rightSideDivsadsa kjdsfkn-ajdnkw" style={style}>
-    <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end`}>
+    <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end settingmenuicon`}>
       <SettingMenuIcon setMainScreen={''} />
     </div>
     <div className="mklfasd-dmsaew nakds-ajews p-0">
@@ -62,9 +62,6 @@ const RightLayout = ({ screen, style = {} }: { screen: number, style?: any }) =>
       </div>
       <div className="homescreenFloater1">
         <img src={require("../images/i2.png")} />
-      </div>
-      <div className="homescreenFloater2">
-        <img src={require("../images/i3.png")} />
       </div>
     </div>
   </div>
