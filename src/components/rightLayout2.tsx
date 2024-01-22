@@ -73,9 +73,20 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
 					/>
       <div className="createVideoInterviewBtnDiv ">
         <button className="btn no-shadow asjdsajde" onClick={() => {
-          setMainScreen(0);
-          if(setShowScreen) {
-            setShowScreen(0);
+          if(isLoggedIn()) {
+            if(setMainScreen) {
+              setMainScreen(3);
+            }
+            if(setShowScreen) {
+              setShowScreen(1);
+            }
+          } else {
+            if(setMainScreen) {
+              setMainScreen(0);
+            }
+            if(setShowScreen) {
+              setShowScreen(1);
+            }
           }
         }}>Create Video Interview</button>
       </div>
