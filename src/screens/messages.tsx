@@ -184,9 +184,9 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
   }, [messages]);
 
   return (
-    <div className="pageContainer">
+    <LinearBackground style={{ width: '100%' }}>
+    <div className="pageContainer" style={{ padding: 25 }}>
       <div className="leftSideDiv">
-        <LinearBackground />
         <div style={{ position: 'absolute', top: 0, width: '100%' }}>
           <div className="message message-content row m-0" style={{ height: 620 }}>
             <div className="col-5 message-left bg-body-tertiary h-100 overflow-auto">
@@ -278,6 +278,7 @@ function View({ mainScreen, setMainScreen, chatUser }: { mainScreen: number, set
       </div>
       <RightLayout2 setMainScreen={setMainScreen} setShowScreen={setShowScreen} />
     </div>
+    </LinearBackground>
   );
 }
 
