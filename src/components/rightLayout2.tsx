@@ -23,7 +23,7 @@ const RightLayout = ({ setMainScreen, setShowScreen, showScreen = null, style = 
 
   return <div className="rightSideDiv kjdsfkn-ajdnkw" style={style}>
     <div className='rightSideBGImg'></div>
-    <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end`}>
+    <div className={`d-${isLoggedIn() ? 'flex' : 'none'} justify-content-end settingmenuicon`}>
       <SettingMenuIcon setMainScreen={setMainScreen} />
     </div>
     {!isLoggedIn() && (mainScreen == 0 || mainScreen == 7) ? (

@@ -4629,3 +4629,10 @@ input:-webkit-autofill:active {
   top: 0;
   left: -21px;
 }
+
+.settingmenuicon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
