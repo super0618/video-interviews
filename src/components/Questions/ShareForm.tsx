@@ -43,13 +43,12 @@ const ShareForm = ({
       
       <Flip direction="horizontal">
         <div className="jkljfkld-jdskfe">
-          <div className="kjjfds-janwkea hover-anim sharebox-kdj-w">
+          <div className="kjjfds-janwkea hover-anim sharebox-kdj-w" style={{backgroundColor: '#5965E3'}}>
             {/* <video className="bg-video" src={"/assets/blue_bg.mp4"} autoPlay loop muted></video> */}
-            <video className="bg-video" src={"/assets/blue_bg.mp4"} autoPlay loop muted style={{ height: '100%', width:'338px !important' }}></video>
             <div className='wave-box'>
               <div className='wave'></div>
             </div>
-            <div className="jhjij-sanwe" style={{ height: '100%', justifyContent: 'space-between', marginTop: 71, paddingTop: 56 }}>
+            <div className="jhjij-sanwe" style={{ height: '100%', justifyContent: 'space-between', marginTop: 71, paddingTop: 56}}>
 
               <h3>Share Questions</h3>
               <h4 className="ksajdsd-sjad">

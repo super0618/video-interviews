@@ -1385,7 +1385,7 @@ const Icons = ({ iconNumber, color = '' }: { iconNumber: number, color?: string 
     >
       <path
         d="M38 0H0C0 0 7 11 14 21C16.0094 23.392 17.5 24 19 24C20.5 24 21.6793 23.6134 23.5 21.5C29.5 13.5 38 0 38 0Z"
-        fill="white"
+        fill="#f5f7ff"
       />
     </svg>
     </>

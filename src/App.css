@@ -221,20 +221,6 @@ body {
   opacity: 0.1;
 }
 
-.kjjfds-janwkea::before {
-  /* background-color: rgba(84, 104, 255, 0.85); */
-  background-color: #5761DF;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  border-radius: 26px;
-  z-index: -2;
-  backdrop-filter: blur(7.5px);
-
-}
-
 .kjjfds-janwkea {
   /* background-image: url('./images/i14.png'); */
   /* position: relative; */
@@ -2548,7 +2534,7 @@ body .no-background {
   height: 51px;
   color: #fff !important;
   text-align: center;
-  font-size: 15px;
+  font-size: 15px !important;
   font-weight: 500;
   line-height: 155.687%;
   letter-spacing: 0.4px;
@@ -4633,4 +4619,15 @@ input:-webkit-autofill:active {
   top: 0;
   right: 0;
   z-index: 99;
+}
+
+.pic-upload-btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+.pic-upload-btn:hover #add-btn {
+  fill: #00D9CD;
 }
