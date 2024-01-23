@@ -218,6 +218,20 @@ body {
 	opacity: 0.1;
 }
 
+.kjjfds-janwkea::before {
+	/* background-color: rgba(84, 104, 255, 0.85); */
+	background-color: #5761DF;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	border-radius: 26px;
+	z-index: -2;
+	backdrop-filter: blur(7.5px);
+  
+  }
+
 .kjjfds-janwkea {
 	/* background-image: url('./images/i14.png'); */
 	/* position: relative; */
